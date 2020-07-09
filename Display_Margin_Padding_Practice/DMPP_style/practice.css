@@ -1,0 +1,15 @@
+
+.contents
+{
+    display: flex;
+    width:300px;
+    height:300px;
+    
+}
+.box{
+    width:150px;
+    height:300px;
+    outline: 1px solid pink; /**/
+    margin-bottom: -1px;
+    background-color: gray;
+}
