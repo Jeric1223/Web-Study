@@ -1,0 +1,10 @@
+.search{
+    margin: auto 0;
+    
+}
+#search_bar{
+    width: 1000px;
+    height: 200px;
+    border: 20px greenyellow solid;
+    background-color:#FFFFFF;
+}
