@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:sans-serif;
+}
+body{
+    background-color: darkgrey(165, 99, 212, 0.534);
+}
+ol{
+    color: rgb(219, 105, 230);
+}
+a{
+     text-decoration:none;
+} 
