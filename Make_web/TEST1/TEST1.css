@@ -1,10 +1,32 @@
+body{
+    margin: 0;
+}
 .search{
-    margin: auto 0;
-    
+    text-align: center;
+}
+
+.search{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -489.5px;
+    margin-top: -489.5px;
 }
 #search_bar{
-    width: 1000px;
-    height: 200px;
-    border: 20px greenyellow solid;
+    width: 700px;
+    height: 186px;
+    border: 20px solid #19ce60;
     background-color:#FFFFFF;
+    font-size: 64px;
+    font-family:'Malgun Gothic','맑은 고딕',helvetica,'Apple SD Gothic Neo',sans-serif;
+
+    position: relative;
+}
+#search_click{
+    width: 235px; 
+    height: 228px;
+    background: url( "naver.PNG" ) no-repeat;
+    display: inline-block;
+    border: none;
+    position: absolute;
 }
