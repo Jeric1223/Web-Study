@@ -1,6 +1,5 @@
 body{
-    margin: 0;
-    
+    margin: 0; 
 }
 .Goo{
     width: 100vw;
@@ -25,11 +24,15 @@ body{
     font-size: 35px;
 }
 p{
-    font-size: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 .Text_Bar{
     width: 150px;
     height: 100px;
     display: flex;
-    
+}
+.GooGoodan_text{
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem;
 }
