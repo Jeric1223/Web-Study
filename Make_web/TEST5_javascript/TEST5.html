@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>끝말잇기</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./TEST5.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
     </head>
     <body>
-        <script type="text/javascript">
-            let word = prompt("문자를 입력하세요.\n" + "첫번째 단어를 입력해주세요.");
-            let next = prompt("제시어는 " + word + "입니다.\n문자를 입력하세요.");
-            temp[0] = word;
-            temp[1] = next;
-            while(word[word.length - 1] === next[0]){
-                word = next;
-                next = prompt("제시어는 " + next + "입니다.\n" + "문자를 입력하세요.");
-            }
+        <div id="button_box">
+            <input type="button" id="ending_button" onclick="ending()" title="끝말잇기 시작하기">
+            <p>※기본 끝말잇기 룰과 같습니다.</p>
+            <p>※자바스크립트 공부용이기 때문에 미흡한 점이 많습니다.</p>
+        </div>
+        <script src="TEST5.JS">
         </script>
     </body>
 </html>
