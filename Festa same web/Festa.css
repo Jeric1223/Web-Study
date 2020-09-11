@@ -71,9 +71,36 @@ section{
 }
 #NewPage{
     width: 53%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #NewText{
+    width: 100%;
     margin-top: 45px;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 32px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #4a4a4a;
+}
+.NewBox{
+    width: 250px;
+    height: 300px;
+    border: #4a4a4a solid 1px;
+    width: 25%;
+    margin-right: 13px;
+}
+#NewBox{
+    width: 53%;
+    display: flex;
+    flex-direction: row;
+}
+.NewBox-Img{
+    width: 100%;
+    height: 130px;
+    border-bottom: #4a4a4a solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
 }
