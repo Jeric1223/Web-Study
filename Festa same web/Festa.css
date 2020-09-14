@@ -75,6 +75,14 @@ section{
     flex-direction: row;
     justify-content: space-between;
 }
+#NewPage2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 53%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #NewText{
     width: 100%;
     margin-top: 45px;

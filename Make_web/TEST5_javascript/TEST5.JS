@@ -12,7 +12,7 @@ function ending() {
 
     let next = prompt("제시어는 " + word + "입니다.\n문자를 입력하세요.");
     overlap[1] = next;
-
+    
     while(word[word.length - 1] === next[0]){
         overlap[i] = word;
         word = next;
