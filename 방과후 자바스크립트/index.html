@@ -8,14 +8,13 @@
 </head>
 <body>
   <div class="box" id="alert">
-    <input id="id" type="text" placeholder="ID 입력">
-    <input id="password" type="password" placeholder="password 입력">
+    <input id="id" type="text">
     <button>닫기</button>
   </div>
-  <button onclick="Button('block')">버튼1</button>
-  <button onclick="Buttonp('block')">버튼2</button>
+  <button onclick="kang('ID')" >버튼1</button>
+  <button onclick="kang('Password')">버튼2</button>
   <script>
-      function Button(string)
+/*       function Button(string)
       {
         document.getElementById('id').style.display=string;
         document.getElementById('password').style.display='none';
@@ -25,6 +24,10 @@
       {
         document.getElementById('password').style.display=string;
         document.getElementById('id').style.display='none';
+      } */
+      function kang(val)
+      {
+        document.getElementById('id').placeholder = val + '를 입력하세요';
       }
   </script>
 </body>

@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <h1 id="test">안녕</h1>
+  <div class="box" id="alert">
+    <p>모달창</p>
+  </div>
+  <button id="btn1">열기</button> <!-- onclick="$('#alert').css('display','block');" -->
+  <button id="btn2">닫기</button> <!-- onclick="$('#alert').css('display','none');" -->
   <script>
-    document.getElementById('test').innerHTML="hello";
-    $('#test').html('hello');
+    $('#btn1').on('click',function() {
+      $('#alert').show();
+    });
+    $('#btn2').on('click',function() {
+      $('#alert').hide();
+    });
   </script>
 </body>
 </html>
