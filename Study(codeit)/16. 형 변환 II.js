@@ -21,3 +21,4 @@ console.log(1 === '1');  //일치 , 불일치 (!==) 형변환이 안되기 때�
 console.log(1 === true);
 console.log(1 == '1'); //동등 ,부등(!= ) 동등비교는 숫자형으로 형변환이 되기때문에 true
 console.log(1 == true);
+
