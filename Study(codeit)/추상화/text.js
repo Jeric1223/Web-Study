@@ -1,1 +1,1 @@
-console.lg;
+console.console.log(daks;dkasl;dk);
