@@ -1,4 +1,30 @@
 .main-background{
-  background-image: url(woman-5596173_1920.jpg);
+  /* background-image: url(woman-5596173_1920.jpg); */
   background-size: cover;
+  color: black;
+  margin-bottom: none;
+}
+.Login-alert{
+  display: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#menu {
+  display: none;
+}
+#menuButton{
+  cursor: pointer;
+}
+.lsMenu{
+  cursor: pointer;
+}
+.firstSlide{
+  color: black;
+}
+#loading{
+  display: none;
 }
