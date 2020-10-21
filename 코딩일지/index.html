@@ -64,13 +64,18 @@
         </div>
       </div>
     </aside>
+    <!-- section -->
     <section>
       <h2>일지</h2>
-      <div class="writeBox">
-        
+      <div class="writeBox"></div>
+<!--         <div class="writeListBox">
+            <a href="#">제목</a>
+            <p>가나다라마바사....</p>
+            <p>일시 : 2020-10-21</p>
+        </div> -->
+      <div class="writeButtonBox" >
+        <button type="button" id="writeButton" data-toggle="modal" class="btn btn-dark">글쓰기</button>
       </div>
-      <button type="button" id="writeButton" data-toggle="modal" class="btn btn-dark">글쓰기</button>
-
     </section>
   </div>
   <!-- 모달창 -->
@@ -80,7 +85,8 @@
         <h3>일지를 작성해 주세요.</h3>
       </div>
       <div class="modalInput">
-        <textarea id="modalInput"></textarea>
+        <input id="modalTitleInput" placeholder="제목을 입력해주세요." type="text">
+        <textarea id="modalInput" placeholder="본문을 입력해주세요."></textarea>
       </div>
       <div class="modalButton">
         <button type="button" class="btn btn-success" id="modalWriteButton">작성</button>

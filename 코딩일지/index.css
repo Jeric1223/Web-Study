@@ -79,7 +79,6 @@ html, body {
 .mainSection{
     display: flex;
     flex-direction: row;
-
 }
 aside{
     display: flex;
@@ -97,6 +96,40 @@ section
 section > h2{
     border-bottom: #000000E6 solid 4px;
     padding: 8px;
+}
+.writeButtonBox
+{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+.writeListBox{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 155px;
+  border-radius: 20px;
+  border: solid black 1px;
+  padding-left: 50px;
+  font-size: 1rem;
+  font-family: 'Noto Serif KR', serif;
+}
+.writeListBox > a{
+  font-size: 1.8rem;
+  color: black;
+  text-decoration:none;
+  padding-top: 10px;
+}
+.writeListBox p:nth-of-type(2)
+{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  padding-right: 14px;
+  padding-top: 14px;
 }
 .card{
     padding: 20px;
@@ -135,7 +168,7 @@ section > h2{
     top: 30%;
     margin-left: -325px;
     width: 700px;
-    height: 500px;
+    height: 570px;
     border: solid #00000080 2px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -149,6 +182,9 @@ section > h2{
     text-align: center;
     font-family: 'Noto Serif KR', serif;
 }
+#modalTitleInput{
+  width: 425px;
+}
 .modalTitle{
     display: flex;
     justify-content: flex-start;
@@ -157,9 +193,9 @@ section > h2{
     margin-top: 34px;
     margin-bottom: 24px;
 }
-.modalInput
+#modalInput
 {
-    width: 100%;
+    margin-top: 15px;
 }
 .modalButton{
     margin-top: 10px;
