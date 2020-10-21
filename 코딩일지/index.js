@@ -11,6 +11,7 @@ function closeButton() {
 
   $('.modals').fadeOut();
   document.getElementById('modalInput').value = null;
+  document.getElementById('modalTitleInput').value = null;
 }
 
 let dir = document.getElementById('modalWriteButton');
@@ -18,16 +19,20 @@ let center = document.querySelector('.writeBox');
 //let center = document.querySelector('section');
 
 dir.addEventListener('click', function() {
-  let str = document.getElementById('modalInput').value;
-  str = str.replace(/(?:\r\n|\r\n)/g, '<br />');
+  let mainText = document.getElementById('modalInput').value;
+  let Title = document.getElementById('modalTitleInput').value;
+
+  mainText = mainText.replace(/(?:\r\n|\r\n)/g, '<br />');
 
   const listTemplate = `
-  <li>
-  <span>${str}</span>
-  </li>
+  <div class="writeListBox">
+    <a href="#">${Title}</a>
+    <p>${mainText}</p>
+    <p>일시 : 2020-10-21</p>
+  </div>
   `
   
-  center.insertAdjacentHTML('beforeend', listTemplate);
+  center.insertAdjacentHTML('afterbegin', listTemplate);
   closeButton();
 });
-console.log(str);
+
