@@ -18,21 +18,25 @@ let dir = document.getElementById('modalWriteButton');
 let center = document.querySelector('.writeBox');
 //let center = document.querySelector('section');
 
+let today = new Date();   
+let year = today.getFullYear(); // 년도
+let month = today.getMonth() + 1;  // 월
+let date = today.getDate();  // 날짜
+
+
 dir.addEventListener('click', function() {
   let mainText = document.getElementById('modalInput').value;
   let Title = document.getElementById('modalTitleInput').value;
-
   mainText = mainText.replace(/(?:\r\n|\r\n)/g, '<br />');
 
   const listTemplate = `
-  <div class="writeListBox">
+  <div class="writeListBox" cursor: pointer; ">
     <a href="#">${Title}</a>
     <p>${mainText}</p>
-    <p>일시 : 2020-10-21</p>
+    <p>일시 : ${year}-${month}-${date}</p>
   </div>
   `
   
   center.insertAdjacentHTML('afterbegin', listTemplate);
   closeButton();
 });
-
