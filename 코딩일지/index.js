@@ -23,7 +23,6 @@ let year = today.getFullYear(); // 년도
 let month = today.getMonth() + 1;  // 월
 let date = today.getDate();  // 날짜
 
-
 dir.addEventListener('click', function() {
   let mainText = document.getElementById('modalInput').value;
   let Title = document.getElementById('modalTitleInput').value;
@@ -36,7 +35,8 @@ dir.addEventListener('click', function() {
     <p>일시 : ${year}-${month}-${date}</p>
   </div>
   `
-  
+  setItem
   center.insertAdjacentHTML('afterbegin', listTemplate);
+
   closeButton();
 });
