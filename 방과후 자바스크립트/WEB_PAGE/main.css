@@ -7,11 +7,28 @@
 .Login-alert{
   display: none;
 }
-nav{
+.navMenu{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  transition: 2.5s;
+}
+.nav-black{
+  background-color: black;
+  color: white;
+  font-size: 0.5rem;
+  transition: 2.5s;
+}
+.nav-white{
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  transition: 2.5s;
 }
 #menu {
   display: none;
