@@ -97,6 +97,23 @@ section > h2{
     border-bottom: #000000E6 solid 4px;
     padding: 8px;
 }
+.settingBox{
+  width: 140px;
+  height: 74px;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+.settingBox > div
+{
+  height: 50%;
+  display: flex;
+  padding-left: 7px;
+}
+.settingBox > div:nth-of-type(2)
+{
+  border-top: black solid;
+}
 .writeButtonBox
 {
   display: flex;
@@ -117,7 +134,7 @@ section > h2{
   font-size: 1rem;
   font-family: 'Noto Serif KR', serif;
 }
-.writeListBox > a{
+.writeListBoxHeader > a{
   font-size: 1.8rem;
   color: black;
   text-decoration:none;
@@ -130,6 +147,17 @@ section > h2{
   font-size: 0.8rem;
   padding-right: 14px;
   padding-top: 14px;
+}
+.writeListBox img
+{
+  cursor: pointer;
+  margin-right: 8px;
+}
+.writeListBoxHeader
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .card{
     padding: 20px;

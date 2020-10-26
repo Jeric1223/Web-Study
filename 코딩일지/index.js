@@ -29,13 +29,15 @@ dir.addEventListener('click', function() {
   mainText = mainText.replace(/(?:\r\n|\r\n)/g, '<br />');
 
   const listTemplate = `
-  <div class="writeListBox" cursor: pointer; ">
+  <div class="writeListBox" cursor: pointer;">
+  <div class="writeListBoxHeader">
     <a href="#">${Title}</a>
-    <p>${mainText}</p>
-    <p>일시 : ${year}-${month}-${date}</p>
+    <img src="./free-icon-vertical-dots-64576.png" style="width: 16px; height: 16px;">
   </div>
+  <p>${mainText}</p>
+  <p>일시 : ${year}-${month}-${date}</p>
+</div>
   `
-  setItem
   center.insertAdjacentHTML('afterbegin', listTemplate);
 
   closeButton();
