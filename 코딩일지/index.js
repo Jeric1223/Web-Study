@@ -25,47 +25,47 @@ let date = today.getDate();  // 날짜
 
 
 dir.addEventListener('click', function() {
+
   let mainText = document.getElementById('modalInput').value;
   let Title = document.getElementById('modalTitleInput').value;
 
-  let writeObject = {
+  //제목과 내용에 대한 객체
+ /*  let writeObject = {
     writeTitle: Title,
     writeMainText: mainText
-   };
-   console.log(writeObject)
-
-  mainText = mainText.replace(/(?:\r\n|\r\n)/g, '<br />');
-
-  const listTemplate = `
-  <div class="writeListBox" cursor: pointer;">
+   }; */
+   
+   mainText = mainText.replace(/(?:\r\n|\r\n)/g, '<br />');
+   
+   const listTemplate = `
+   <div class="writeListBox" cursor: pointer;">
     <div class="writeListBoxHeader">
-      <a href="#">${writeObject.writeTitle}</a>
-      <p>${writeObject.writeMainText}</p>
+      <a href="#">${Title}</a>
+      <p>${mainText}</p>
     </div>
-    <div class="writeListBoxSetting">
-      <img src="./free-icon-vertical-dots-64576.png" id="settingImage" style="width: 16px; height: 16px;">
-      <div class="settingBox">
-        <div><p>수정하기</p></div>
-        <div><p>삭제하기</p></div>
+      <div class="writeListBoxSetting">
+        <img src="./free-icon-vertical-dots-64576.png" id="settingImage" style="width: 16px; height: 16px;">
+        <div class="settingBox">
+          <div><p>수정하기</p></div>
+          <div><p>삭제하기</p></div>
+        </div>
+        <p>일시 : ${year}-${month}-${date}</p>
+      </div>
     </div>
-    <p>일시 : ${year}-${month}-${date}</p>
-  </div>
-</div>
-  `
-
-
-  center.insertAdjacentHTML('afterbegin', listTemplate);
-
-  closeButton();
+    `
+    localStorage.setItem("writeTitle",`${listTemplate}`);
+    
+    localStorage.getItem("writeTitle");
+    
+    center.insertAdjacentHTML('afterbegin', localStorage.getItem("writeTitle"));
+    
   //점 세개인 이미지를 클릭했을때 settingBox가 나타나는
    $('#settingImage').on('click',function()
   {
    $('.settingBox').slideToggle();
-    console.log(102)
-  }); 
+  });
   
-
-
+  closeButton();
 });
 
 //점 세개인 이미지를 클릭했을때 settingBox가 나타나는
