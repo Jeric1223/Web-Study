@@ -30,5 +30,4 @@ function ending() {
     if(word[word.length - 1] != next[0]){ //끝말잇기의 기본 조건
         alert("잘못 입력하셧습니다.");
     }
-    
 }
