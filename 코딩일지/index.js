@@ -53,11 +53,11 @@ dir.addEventListener('click', function() {
       </div>
     </div>
     `
-    localStorage.setItem("writeTitle",`${listTemplate}`);
+    localStorage.setItem(`${Title}`,`${listTemplate}`);
     
-    localStorage.getItem("writeTitle");
-    
-    center.insertAdjacentHTML('afterbegin', localStorage.getItem("writeTitle"));
+    localStorage.getItem(`${Title}`);
+
+    center.insertAdjacentHTML('afterbegin',localStorage.getItem(`${Title}`));
     
   //점 세개인 이미지를 클릭했을때 settingBox가 나타나는
    $('#settingImage').on('click',function()
@@ -67,6 +67,10 @@ dir.addEventListener('click', function() {
   
   closeButton();
 });
+/* for(let z = 1; z < localStorage.length;  z++)
+{
+  center.insertAdjacentHTML('afterbegin',localStorage.getItem(`${Title}`));
+} */
 
 //점 세개인 이미지를 클릭했을때 settingBox가 나타나는
 /* $('#settingImage').on('click',function()
@@ -74,4 +78,6 @@ dir.addEventListener('click', function() {
   $('.settingBox').slideToggle();
   console.log(102)
 }); */
+
+  
 
