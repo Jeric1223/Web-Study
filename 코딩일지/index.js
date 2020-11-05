@@ -57,7 +57,7 @@ dir.addEventListener('click', function() {
     
     localStorage.getItem(`${Title}`);
 
-    center.insertAdjacentHTML('afterbegin',localStorage.getItem(`${Title}`));
+    center.insertAdjacentHTML('afterbegin', localStorage.getItem(`${Title}`));
     
   //점 세개인 이미지를 클릭했을때 settingBox가 나타나는
    $('#settingImage').on('click',function()
@@ -72,12 +72,4 @@ dir.addEventListener('click', function() {
   center.insertAdjacentHTML('afterbegin',localStorage.getItem(`${Title}`));
 } */
 
-//점 세개인 이미지를 클릭했을때 settingBox가 나타나는
-/* $('#settingImage').on('click',function()
-{
-  $('.settingBox').slideToggle();
-  console.log(102)
-}); */
-
-  
 
