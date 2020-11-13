@@ -12,7 +12,9 @@ function closeButton() {
   document.getElementById('modalInput').value = null;
   document.getElementById('modalTitleInput').value = null;
 }
-
+  $('.modifyButton').on('click',function modifyButton() {
+  $('.modifyModal').fadeToggle();
+});
 let dir = document.getElementById('modalWriteButton');
 let center = document.querySelector('.writeBox');
 //let center = document.querySelector('section');
@@ -22,6 +24,7 @@ let year = today.getFullYear(); // 년도
 let month = today.getMonth() + 1;  // 월
 let date = today.getDate();  // 날짜
 
+// 수정하기 버튼의 기술적인 내용을 추가합시다.
 
 
 dir.addEventListener('click', function() {
@@ -34,7 +37,7 @@ dir.addEventListener('click', function() {
     writeTitle: Title,
     writeMainText: mainText
    }; */
-   
+
    mainText = mainText.replace(/(?:\r\n|\r\n)/g, '<br />');
    
    const listTemplate = `
@@ -46,7 +49,7 @@ dir.addEventListener('click', function() {
       <div class="writeListBoxSetting">
         <img src="./free-icon-vertical-dots-64576.png" id="settingImage" style="width: 16px; height: 16px;">
         <div class="settingBox">
-          <div><p>수정하기</p></div>
+          <div  class="modifyButton"><p>수정하기</p></div>
           <div><p>삭제하기</p></div>
         </div>
         <p>일시 : ${year}-${month}-${date}</p>
@@ -64,12 +67,7 @@ dir.addEventListener('click', function() {
   {
    $('.settingBox').slideToggle();
   });
-  
   closeButton();
 });
-/* for(let z = 1; z < localStorage.length;  z++)
-{
-  center.insertAdjacentHTML('afterbegin',localStorage.getItem(`${Title}`));
-} */
 
 

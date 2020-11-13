@@ -205,7 +205,7 @@ section > h2{
     flex-direction: column;
     justify-content: center;
 }
-.modals{
+.modals,.modifyModal{
     display: none;
     position: fixed;
     left: 50%;
