@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+	<title>Sticky Page</title>
+	<style>
+		.grey{
+			background-color: grey;
+			height: 2000px;
+			margin-top: 600px;
+		}
+		.sticky{
+			position: sticky;
+			top: 50%;
+		}
+		.white{
+			background: white;
+			height: 2000px;
+			margin-bottom: 200px;
+		}
+		.sticky2{
+			position: sticky;
+			top: 200px;
+			float: right;
+		}
+		.left-text{
+			float: left;
+			color: black;
+			padding: 10px;
+		}
+		.white > img{
+			width: 600px;
+			height: 600px;
+		}
+		.stickyDiv{
+			width: 1000px;
+			height: 4000px;
+		}
+		.a{
+			position: sticky;
+			top: 100px;
+			margin-top: 10px;
+			transition: 0.5s;
+		}
+		.a1{
+			position: sticky;
+			top: 100px;
+			margin-top: 10px;
+			transition: 0.5s;
+		}
+		.a2{
+			position: sticky;
+			top:100px;
+			margin-top: 10px;
+			transition: 0.5s;
+		}
+	</style>
+  </head>
+  <body>
+	<div class="grey">
+		<h4 class="sticky">이것은 고정되는 글씨</h4>
+	</div>
+	<div class="white">
+		<h4 class="left-text">글자는 올라가고, 그림은 어느정도의 위치에서 멈추는 애니메이션을 구현하였습니다.</h4>
+		<h4 class="left-text">글자는 올라가고, 그림은 어느정도의 위치에서 멈추는 애니메이션을 구현하였습니다.</h4>
+		<img src="./k-전문가 ㅋㅋ.PNG" class="sticky2">
+	</div>
+	<div class="stickyDiv">
+		<img class="a"  src="./card1.jpg">
+		<img class="a1" src="./card2.jpg">
+		<img class="a2" src="./card3.jpg">
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script>
+	 		$(window).scroll(function(){
+				 var height = $(window).scrollTop();
+				 console.log(height);
+				 var y=(-1/556) * height + 1222/147.8 + 1;
+				$('.a').css('opacity',y);
+/* 				if(y>1){
+					y=1;
+					$('.a').css('transform', 'scale('+(y)+')');
+				}
+				$('.a').css('transform', 'scale('+y+')'); */
+				$('.a1').css('opacity',y+1)
+/* 				if(y>1){
+					y=1;
+					$('.a1').css('transform', 'scale('+(y)+')');
+				}
+				$('.a1').css('transform', 'scale('+(y+0.8)+')'); */
+			});
+    </script>
+  </body>
+</html>
