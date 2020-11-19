@@ -1,0 +1,68 @@
+html, body { height:100%;}
+.stopWatch{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stopWatchBox{
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:orange;
+  border-radius: 40px;
+  padding: 13px;
+}
+.stopWatchTime{
+  width: 80%;
+  height: 50%;
+  background-color: gray;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.stopWatchTime > div{
+  width: 85%;
+  height: 45%;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.stopWatchButton{
+  width: 100%;
+  height: 30%;
+  background-color: orange;
+  margin-top: 8px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
+}
+.stopWatchButton > button{
+  width: 58px;
+  height: 58px;
+  border: 0;
+  border-radius: 40px;
+  background-color: orange;
+}
+.stopWatchButton > button:hover{
+  transform: rotate(1turn);
+  transition: 0.7s;
+}
+#stopWatchButtonStart{
+  background-image: url(./image/재생일지정지\ 이미지.png);
+  background-size : cover;
+}
+#stopWatchButtonReset{
+  background-image: url(./image/리셋\ 이미지.png);
+  background-size : cover;
+}
+#stopWatchButtonCount{
+  background-image: url(./image/시간측정\ 이미지.png);
+  background-size : cover;
+}
