@@ -10,7 +10,11 @@
 	<div class="stopWatch">
 		<div class="stopWatchBox">
 			<div class="stopWatchTime">
-				<div>00:00:00</div>
+				<span id="stopWatchTimeMin">00</span><!-- 분 -->
+				<span>:</span>
+				<span id="stopWatchTimeSec">00</span><!--초-->
+				<span>.</span>
+				<span id="stopWatchTimeMilisec">00</span><!--밀리초-->
 			</div>
 			<div class="stopWatchButton">
 				<button id="stopWatchButtonReset"></button>
@@ -19,6 +23,6 @@
 			</div>
 		</div>
 	</div>
-	
+	<script src="./stopWatch.js"></script>
 </body>
 </html>
