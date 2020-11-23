@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./hammer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="overflow: hidden;">
+	  <div class="slide-container">
+		  <div class="slide-box">
+			<img src="./59e8b8114fcf1263230bc978-large.jpg">
+		  </div>
+		  <div class="slide-box">
+			<img src="./5e4fa6f0e2b7c002c0dbe9cb-large.jpg">
+		  </div>
+		  <div class="slide-box">
+			<img src="./shopping.jpg">
+		  </div>
+	  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous"></script>
+  <script>
+		var image1 = document.querySelectorAll('.slide-box img')[0];
+		var manager = new Hammer.Manager(image1);
+		manager.add(new Hammer.Pan({threshold: 200}));
+
+		var image2 = document.querySelectorAll('.slide-box img')[1];
+		var manager2 = new Hammer.Manager(image2);
+		manager2.add(new Hammer.Pan({threshold: 200}));
+
+		var image3 = document.querySelectorAll('.slide-box img')[2];
+		var manager3 = new Hammer.Manager(image3);
+		manager3.add(new Hammer.Pan({threshold: 200}));
+
+		manager.on('pan', function(e) {
+			console.log(e.deltaX);
+			if(e.deltaX < -1)
+			{
+				$('.slide-container').css('transform', 'translateX(' + e.deltaX + 'px)' );
+				if(e.isFinal)
+				{
+					$('.slide-container').css('transform', 'translateX(-100vw)');
+					$('.slide-container').addClass('transforming');
+					setTimeout(function(){
+						$('.slide-container').removeClass('transforming');
+						},500);
+					}
+				}
+			manager2.on('pan', function(a) {
+			console.log(a.deltaX);
+			if(a.deltaX < -1)
+			{
+				$('.slide-container').css('transform', 'translateX(' + -300+ 'vw' +'px)' );
+				if(a.isFinal)
+				{
+					$('.slide-container').css('transform', 'translateX(-200vw)');
+					$('.slide-container').addClass('transforming');
+					setTimeout(function(){
+						$('.slide-container').removeClass('transforming');
+						},500);
+					}
+				}
+			})
+		})
+		manager2.on('pan', function(d) {
+			console.log(d.deltaX);
+			if(d.deltaX > 1)
+			{
+				$('.slide-container').css('transform', 'translateX(' + d.deltaX + 'px)' );
+				if(d.isFinal)
+				{
+					$('.slide-container').css('transform', 'translateX(0vw)');
+					$('.slide-container').addClass('transforming');
+					setTimeout(function(){
+						$('.slide-container').removeClass('transforming');
+						},500);
+					}
+				}
+			manager3.on('pan', function(c) {
+			if(c.deltaX > 1)
+			{
+				$('.slide-container').css('transform', 'translateX(' +-100+'px)' );
+				if(c.isFinal)
+				{
+					$('.slide-container').css('transform', 'translateX(-100vw)');
+					$('.slide-container').addClass('transforming');
+					setTimeout(function(){
+						$('.slide-container').removeClass('transforming');
+						},500);
+					}
+				}
+			})
+		})
+
+
+</script>
+</body>
+</html>
