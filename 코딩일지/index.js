@@ -47,7 +47,7 @@ dir.addEventListener('click', function() {
       <p>${mainText}</p>
     </div>
       <div class="writeListBoxSetting">
-        <img src="./free-icon-vertical-dots-64576.png" id="settingImage" style="width: 16px; height: 16px;">
+        <i class="fas fa-bars" id="settingImage" style="width: 16px; height: 16px;"></i>
         <div class="settingBox">
           <div  class="modifyButton"><p>수정하기</p></div>
           <div><p>삭제하기</p></div>
