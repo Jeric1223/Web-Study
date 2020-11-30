@@ -15,6 +15,7 @@ time, mark, audio, video {
 }
 #settingImage{
   z-index: 30;
+  cursor: pointer;
 }
 nav{
     display: flex;
@@ -33,10 +34,10 @@ nav{
 html, body {
     margin: 0;
     height: 100%;
+    min-width: 992px;
 }
 #title{
     margin-left: 10px;
-
 }
 #menuButton{
     margin-right: 10px;
@@ -184,15 +185,16 @@ section > h2{
     height: 400px;
     border-radius: 20px;
     border: #000000E6 1px solid;
+    min-width: 190px;
 }
 #cardImage{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    width: 100%;
-    height: auto;
     border-radius: 6px;
     border-bottom: #000000E6;
+    max-width: 100%;
+    height: auto;
 }
 #myInfo{
     font-size: 1.25rem;
