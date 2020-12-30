@@ -3,7 +3,11 @@
 웹브라우저(프론트엔드)에서 정보를 입력받았다.
 그러면 그 정보를 서버로 보내줘야 한다.
 
-### 요청(request), 응답(response)
+### 요청(request), 응답(response)                                    
+axios({
+  method: "POST, GET, DELETE, PUT "
+})
+  
 
 기본적으로 http는 요청(request), 응답(response)가 한 세트다.
 그러면 그것을 어떻게 해야되느냐. 그 중 한 방법이 fetch함수(javascript내장함수이다)를 이용할 것이다.

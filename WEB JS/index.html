@@ -19,7 +19,7 @@
 }
 .background, .circle{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -30,12 +30,14 @@
 <body drop="circleClick">
   <h1>색조합 사이트</h1>
   <div class="background">
-    <h2>배경</h2>
+    <h2>Background</h2>
     <p id="background" drag="haveResize()">background</p>
   </div>
   <div class="circle">
-    <h2>원</h2>
-    <p id="circle2">circle</p>
+    <div>
+      <h2>Circle</h2>
+      <p id="circle2">circle</p>
+    </div>
     <div id="circle"></div>
   </div> 
 </body>
