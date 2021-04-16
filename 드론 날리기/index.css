@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+[class*="drone"] img {
+  width: 100%;
+}
+[class*="drone"] [class*="fan"] {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%) perspective(500px) rotateX(60deg);
+}
+.drone {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  width: 100%;
+}
+.drone .fan01 {
+  top: 22%;
+  left: 4.9%;
+  width: 38%;
+}
+.drone .fan02 {
+  top: 56%;
+  left: 55.7%;
+  width: 50%;
+}
+.drone .fan03 {
+  top: 1.6%;
+  left: 47%;
+  width: 30%;
+}
+.drone .fan04 {
+  top: 23%;
+  left: 95%;
+  width: 36%;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: -10px;
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite linear alternate;
+}
+.turn {
+  animation: turn 0.04s infinite linear;
+}
