@@ -1,0 +1,37 @@
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftHeader{
+  margin-left: 80px;
+}
+.leftHeader > a > h1 {
+  color: #333333;
+  font-size: 28px;
+
+}
+.middleHeader > a {
+  padding-right: 23px;
+  font-size: 17px;
+  color: #1e1e1e;
+}
+.rightHeader{
+  margin-right: 80px;
+}
+.rightHeader > a {
+  font-size: 15px;
+  color: #1e1e1e;
+}
