@@ -1,3 +1,5 @@
+// github copilot 사용
+
 //오늘의 서울온도 출력
 function getWeather() {
   var url =
